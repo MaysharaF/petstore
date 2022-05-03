@@ -58,4 +58,8 @@ public class Item {
     public static final String SEARCH = "Item.search";
     public static final String FIND_ALL = "Item.findAll";
 
+    public Integer getUnitCost() {
+        return null;
+    }
+
 }
