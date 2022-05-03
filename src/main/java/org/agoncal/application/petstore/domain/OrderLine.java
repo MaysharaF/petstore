@@ -2,6 +2,8 @@ package org.agoncal.application.petstore.domain;
 
 import javax.persistence.*;
 
+import lombok.Data;
+
 /**
  * @author Antonio Goncalves
  *         http://www.antoniogoncalves.org
@@ -9,6 +11,7 @@ import javax.persistence.*;
  */
 
 @Entity
+@Data
 public class OrderLine {
 
     // ======================================
