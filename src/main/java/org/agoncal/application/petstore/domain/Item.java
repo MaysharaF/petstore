@@ -3,7 +3,14 @@ package org.agoncal.application.petstore.domain;
 import org.agoncal.application.petstore.constraint.NotEmpty;
 import org.agoncal.application.petstore.constraint.Price;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -17,7 +24,6 @@ import javax.xml.bind.annotation.XmlTransient;
  *         --
  */
 
-@Data
 @Entity
 @NamedQueries({
         @NamedQuery(name = Item.FIND_BY_PRODUCT_ID, query = "SELECT i FROM Item i WHERE i.product.id = :productId"),
@@ -25,6 +31,13 @@ import javax.xml.bind.annotation.XmlTransient;
         @NamedQuery(name = Item.FIND_ALL, query = "SELECT i FROM Item i")
 })
 @XmlRootElement
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
+@NoArgsConstructor
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class Item {
 
     // ======================================

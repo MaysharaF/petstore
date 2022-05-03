@@ -2,7 +2,13 @@ package org.agoncal.application.petstore.domain;
 
 import javax.persistence.*;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @author Antonio Goncalves
@@ -11,7 +17,13 @@ import lombok.Data;
  */
 
 @Entity
-@Data
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
+@NoArgsConstructor
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class OrderLine {
 
     // ======================================
